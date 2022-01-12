@@ -5406,6 +5406,23 @@ extern __bank0 __bit __timeout;
 #pragma config LVP = ON
 
 
+static void PWM3_Initialize(void);
+static void PWM3_LoadPercentDutyValue(uint16_t dutyValue);
+static void TMR2_Initialize(void);
+static void PORT_Initialize(void);
+static void Initialize(void);
+
+void main(void) {
+    Initialize();
+    PWM3_LoadPercentDutyValue(75);
+
+    while(1){
+    }
+
+    return;
+}
+
+
 
 static void PWM3_Initialize(void)
 {
@@ -5435,14 +5452,9 @@ static void PORT_Initialize(void)
     TRISCbits.TRISC5 = 0x00;
     RC5PPS = 0x03;
 }
-void main(void) {
+
+static void Initialize(void){
     PORT_Initialize();
     PWM3_Initialize();
-    PWM3_LoadPercentDutyValue(90);
     TMR2_Initialize();
-
-    while(1){
-    }
-
-    return;
 }

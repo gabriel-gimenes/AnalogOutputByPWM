@@ -7,11 +7,11 @@ __Hintentry 2 0 CODE 0
 __Lintentry 2 0 CODE 0
 __size_of_PWM3_Initialize 0 0 ABS 0
 _T2PR 28D 0 ABS 0
-_main 75A 0 CODE 0
+_main 760 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
 start 2 0 CODE 0
-__end_of_PORT_Initialize 747 0 CODE 0
+__end_of_PORT_Initialize 743 0 CODE 0
 reset_vec 0 0 CODE 0
 wtemp0 7E 0 ABS 0
 _T2TMR 28C 0 ABS 0
@@ -21,7 +21,7 @@ __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
-__end_of_TMR2_Initialize 75A 0 CODE 0
+__end_of_TMR2_Initialize 760 0 CODE 0
 __Hfunctab 0 0 ENTRY 0
 __Lfunctab 0 0 ENTRY 0
 __Hcommon 0 0 ABS 0
@@ -30,7 +30,7 @@ __Heeprom_data 0 0 EEDATA 3
 __Leeprom_data 0 0 EEDATA 3
 _PIR1bits 70D 0 ABS 0
 ___int_sp 0 0 STACK 2
-__end_of_PWM3_Initialize 74F 0 CODE 0
+__end_of_PWM3_Initialize 74B 0 CODE 0
 ?___lwdiv 76 0 COMMON 1
 __Habs1 0 0 ABS 0
 __Labs1 0 0 ABS 0
@@ -67,6 +67,7 @@ ___wmul 76E 0 CODE 0
 __end_of_main 76E 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
+__size_of_Initialize 0 0 ABS 0
 ___wmul@multiplier 70 0 COMMON 1
 end_of_initialization 7FD 0 CODE 0
 ___stacklo 2004 0 ABS 0
@@ -209,19 +210,21 @@ __Hbank8 0 0 BANK8 1
 __Lbank8 0 0 BANK8 1
 __Hbank9 0 0 BANK9 1
 __Lbank9 0 0 BANK9 1
-__ptext1 74F 0 CODE 0
-__ptext2 78D 0 CODE 0
-__ptext3 76E 0 CODE 0
-__ptext4 7C1 0 CODE 0
-__ptext5 747 0 CODE 0
-__ptext6 741 0 CODE 0
+__ptext1 78D 0 CODE 0
+__ptext2 76E 0 CODE 0
+__ptext3 7C1 0 CODE 0
+__ptext4 74B 0 CODE 0
+__ptext5 755 0 CODE 0
+__end_of_Initialize 755 0 CODE 0
+__ptext6 743 0 CODE 0
+__ptext7 73D 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 __end_of__initialization 7FD 0 CODE 0
 __end_of___lwdiv 7FD 0 CODE 0
-_TMR2_Initialize 74F 0 CODE 0
-_PWM3_Initialize 747 0 CODE 0
-_PORT_Initialize 741 0 CODE 0
+_TMR2_Initialize 755 0 CODE 0
+_PWM3_Initialize 743 0 CODE 0
+_PORT_Initialize 73D 0 CODE 0
 __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 __Hspace_0 800 0 ABS 0
@@ -239,6 +242,7 @@ __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
 __Hspace_4 10013 0 ABS 0
 __Lspace_4 0 0 ABS 0
+_Initialize 74B 0 CODE 0
 PWM3_LoadPercentDutyValue@dutyValue 20 0 BANK0 1
 __end_of_PWM3_LoadPercentDutyValue 7C1 0 CODE 0
 __size_of___lwdiv 0 0 ABS 0
@@ -373,7 +377,7 @@ start_initialization 7FD 0 CODE 0
 ___lwdiv@quotient 7B 0 COMMON 1
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
-__pmaintext 75A 0 CODE 0
+__pmaintext 760 0 CODE 0
 __initialization 7FD 0 CODE 0
 __size_of_PWM3_LoadPercentDutyValue 0 0 ABS 0
 __size_of_TMR2_Initialize 0 0 ABS 0
@@ -383,41 +387,33 @@ reset_vec 0 7 CODE 0 0
 cinit FFA FFF CODE FFA 0
 cstackCOMMON 70 7D COMMON 70 1
 cstackBANK0 20 23 BANK0 20 1
-text4 F82 FF9 CODE F82 0
-text2 F1A F81 CODE F1A 0
-text3 EDC F19 CODE EDC 0
-maintext EB4 EDB CODE EB4 0
-text1 E9E EB3 CODE E9E 0
-text5 E8E E9D CODE E8E 0
-text6 E82 E8D CODE E82 0
+text3 F82 FF9 CODE F82 0
+text1 F1A F81 CODE F1A 0
+text2 EDC F19 CODE EDC 0
+maintext EC0 EDB CODE EC0 0
+text5 EAA EBF CODE EAA 0
+text4 E96 EA9 CODE E96 0
+text6 E86 E95 CODE E86 0
+text7 E7A E85 CODE E7A 0
 %locals
 dist/default/debug\AnalogOutputByPWM.X.debug.o
-C:\Users\gabri\AppData\Local\Temp\s9uk.s
-463 7FD 0 CODE 0
-466 7FD 0 CODE 0
-472 7FD 0 CODE 0
-474 7FD 0 CODE 0
-475 7FE 0 CODE 0
+C:\Users\gabri\AppData\Local\Temp\s8cs.s
+464 7FD 0 CODE 0
+467 7FD 0 CODE 0
+473 7FD 0 CODE 0
+475 7FD 0 CODE 0
+476 7FE 0 CODE 0
 main.c
-47 75A 0 CODE 0
-48 75A 0 CODE 0
-49 75D 0 CODE 0
-50 760 0 CODE 0
-51 768 0 CODE 0
-53 76B 0 CODE 0
-54 76B 0 CODE 0
-33 74F 0 CODE 0
-35 74F 0 CODE 0
-36 752 0 CODE 0
-37 754 0 CODE 0
-38 755 0 CODE 0
-39 757 0 CODE 0
-40 759 0 CODE 0
-26 78D 0 CODE 0
-28 78D 0 CODE 0
-29 7A9 0 CODE 0
-30 7B4 0 CODE 0
-31 7C0 0 CODE 0
+24 760 0 CODE 0
+25 760 0 CODE 0
+26 763 0 CODE 0
+28 76B 0 CODE 0
+29 76B 0 CODE 0
+43 78D 0 CODE 0
+45 78D 0 CODE 0
+46 7A9 0 CODE 0
+47 7B4 0 CODE 0
+48 7C0 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
 15 76E 0 CODE 0
 43 76E 0 CODE 0
@@ -446,12 +442,24 @@ C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
 29 7F8 0 CODE 0
 30 7FC 0 CODE 0
 main.c
-19 747 0 CODE 0
-21 747 0 CODE 0
-22 74A 0 CODE 0
-23 74C 0 CODE 0
-24 74E 0 CODE 0
-42 741 0 CODE 0
-44 741 0 CODE 0
-45 743 0 CODE 0
-46 746 0 CODE 0
+66 74B 0 CODE 0
+67 74B 0 CODE 0
+68 74E 0 CODE 0
+69 751 0 CODE 0
+70 754 0 CODE 0
+51 755 0 CODE 0
+53 755 0 CODE 0
+54 758 0 CODE 0
+55 75A 0 CODE 0
+56 75B 0 CODE 0
+57 75D 0 CODE 0
+58 75F 0 CODE 0
+36 743 0 CODE 0
+38 743 0 CODE 0
+39 746 0 CODE 0
+40 748 0 CODE 0
+41 74A 0 CODE 0
+60 73D 0 CODE 0
+62 73D 0 CODE 0
+63 73F 0 CODE 0
+64 742 0 CODE 0

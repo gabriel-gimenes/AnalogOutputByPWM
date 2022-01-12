@@ -14,6 +14,23 @@
 #pragma config WDTE = OFF                               /*Watchdog timer off*/
 #pragma config LVP = ON                                 /*Low-Voltage Programming On*/
 #define _XTAL_FREQ 8000000                             /*Internal Oscillator Clock = 8MHz*/
+/*Functions prototype*/
+static void PWM3_Initialize(void);
+static void PWM3_LoadPercentDutyValue(uint16_t dutyValue);
+static void TMR2_Initialize(void);
+static void PORT_Initialize(void);
+static void Initialize(void);
+// <editor-fold defaultstate="collapsed" desc="main file">
+void main(void) {
+    Initialize();
+    PWM3_LoadPercentDutyValue(75);
+    
+    while(1){
+    }
+    
+    return;
+}
+// </editor-fold>
 
 /*Initialization PWM3 routine (10 bits resolution)*/
 static void PWM3_Initialize(void)
@@ -30,6 +47,7 @@ static void PWM3_LoadPercentDutyValue(uint16_t dutyValue)
     PWM3DCL = (dutyValue & 0x0003)<<6;                  /*2 LSBs of PWM duty cycle*/
 }
 /*Timer2 initialization: clock soure to PWM*/
+//TODO change the T2PR to 0x3F
 static void TMR2_Initialize(void)
 {
     T2CLKCON = 0x01;                                    /*Clock source: Fosc/4 = 2MHz -> T = 500ns*/
@@ -44,14 +62,9 @@ static void PORT_Initialize(void)
     TRISCbits.TRISC5 = 0x00;                            /*Configuring RC5 as an output*/
     RC5PPS = 0x03;                                      /*Configuring RC5 as PWM3 output*/
 }
-void main(void) {
+
+static void Initialize(void){
     PORT_Initialize();
     PWM3_Initialize();
-    PWM3_LoadPercentDutyValue(75);
     TMR2_Initialize();
-    
-    while(1){
-    }
-    
-    return;
 }

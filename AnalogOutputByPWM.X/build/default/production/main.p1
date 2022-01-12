@@ -1,4 +1,11 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"22 main.c
+[; ;main.c: 22:     PWM3DCH = 0x27;
+[v _Initialize `(v ~T0 @X0 0 sf ]
+"19
+[; ;main.c: 19: static void PWM3_Initialize(void)
+[v _PWM3_LoadPercentDutyValue `(v ~T0 @X0 0 sf1`us ]
 "4144 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h: 4144: extern volatile unsigned char PWM3CON __attribute__((address(0x316)));
 [v _PWM3CON `Vuc ~T0 @X0 0 e@790 ]
@@ -65,7 +72,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7535
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h: 7535: extern volatile unsigned char RC5PPS __attribute__((address(0x1F25)));
 [v _RC5PPS `Vuc ~T0 @X0 0 e@7973 ]
-[p mainexit ]
 "111 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h: 111: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -562,122 +568,134 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15224.h: 8661: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
 "14 main.c
-[; ;main.c: 14: }
+[; ;main.c: 14:     return;
 [p x WDTE = OFF ]
 "15
-[; ;main.c: 15: 
+[; ;main.c: 15: }
 [p x LVP = ON ]
-"19
-[; ;main.c: 19:     T2PR = 0x4F;
-[v _PWM3_Initialize `(v ~T0 @X0 1 sf ]
-"20
-[; ;main.c: 20:     T2TMR = 0x00;
-{
-[e :U _PWM3_Initialize ]
-[f ]
-"21
-[; ;main.c: 21:     PIR1bits.TMR2IF = 0;
-[e = _PWM3CON -> -> 128 `i `uc ]
-"22
-[; ;main.c: 22:     T2CONbits.ON = 1;
-[e = _PWM3DCH -> -> 39 `i `uc ]
-"23
-[; ;main.c: 23: }
-[e = _PWM3DCL -> -> 192 `i `uc ]
-"24
-[; ;main.c: 24: 
-[e :UE 467 ]
-}
-"26
-[; ;main.c: 26: {
-[v _PWM3_LoadPercentDutyValue `(v ~T0 @X0 1 sf1`us ]
-"27
-[; ;main.c: 27:     TRISCbits.TRISC5 = 0x00;
-{
-[e :U _PWM3_LoadPercentDutyValue ]
-"26
-[; ;main.c: 26: {
-[v _dutyValue `us ~T0 @X0 1 r1 ]
-"27
-[; ;main.c: 27:     TRISCbits.TRISC5 = 0x00;
-[f ]
-"28
-[; ;main.c: 28:     RC5PPS = 0x03;
-[e = _dutyValue -> / * -> _dutyValue `ui -> -> 320 `i `ui -> -> 100 `i `ui `us ]
-"29
-[; ;main.c: 29: }
-[e = _PWM3DCH -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
-"30
-[; ;main.c: 30: void main(void) {
-[e = _PWM3DCL -> << & -> _dutyValue `ui -> -> 3 `i `ui -> 6 `i `uc ]
-"31
-[; ;main.c: 31:     PORT_Initialize();
-[e :UE 468 ]
-}
-"33
-[; ;main.c: 33:     PWM3_LoadPercentDutyValue(90);
-[v _TMR2_Initialize `(v ~T0 @X0 1 sf ]
-"34
-[; ;main.c: 34:     TMR2_Initialize();
-{
-[e :U _TMR2_Initialize ]
-[f ]
-"35
-[; ;main.c: 35: 
-[e = _T2CLKCON -> -> 1 `i `uc ]
-"36
-[; ;main.c: 36:     while(1){
-[e = _T2PR -> -> 79 `i `uc ]
-"37
-[; ;main.c: 37:     }
-[e = _T2TMR -> -> 0 `i `uc ]
-"38
-[; ;main.c: 38: 
-[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39:     return;
-[e = . . _T2CONbits 0 2 -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40: }
-[e :UE 469 ]
-}
-"42
-[v _PORT_Initialize `(v ~T0 @X0 1 sf ]
-"43
-{
-[e :U _PORT_Initialize ]
-[f ]
-"44
-[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
-"45
-[e = _RC5PPS -> -> 3 `i `uc ]
-"46
-[e :UE 470 ]
-}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"47
+"24
+[; ;main.c: 24: }
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"48
-[e ( _PORT_Initialize ..  ]
-"49
-[e ( _PWM3_Initialize ..  ]
-"50
-[e ( _PWM3_LoadPercentDutyValue (1 -> -> 90 `i `us ]
-"51
-[e ( _TMR2_Initialize ..  ]
-"53
-[e :U 473 ]
+"25
+[; ;main.c: 25: 
+[e ( _Initialize ..  ]
+"26
+[; ;main.c: 26: static void PWM3_LoadPercentDutyValue(uint16_t dutyValue)
+[e ( _PWM3_LoadPercentDutyValue (1 -> -> 75 `i `us ]
+"28
+[; ;main.c: 28:     dutyValue = dutyValue*320/100;
+[e :U 469 ]
 {
-"54
+"29
+[; ;main.c: 29:     PWM3DCH = (dutyValue & 0x03FC)>>2;
 }
-[e :U 472 ]
-[e $U 473  ]
-[e :U 474 ]
-"56
-[e $UE 471  ]
-"57
+[e :U 468 ]
+[e $U 469  ]
+[e :U 470 ]
+"31
+[; ;main.c: 31: }
+[e $UE 467  ]
+"32
+[; ;main.c: 32: 
+[e :UE 467 ]
+}
+"36
+[; ;main.c: 36:     T2PR = 0x4F;
+[v _PWM3_Initialize `(v ~T0 @X0 1 sf ]
+"37
+[; ;main.c: 37:     T2TMR = 0x00;
+{
+[e :U _PWM3_Initialize ]
+[f ]
+"38
+[; ;main.c: 38:     PIR1bits.TMR2IF = 0;
+[e = _PWM3CON -> -> 128 `i `uc ]
+"39
+[; ;main.c: 39:     T2CONbits.ON = 1;
+[e = _PWM3DCH -> -> 39 `i `uc ]
+"40
+[; ;main.c: 40: }
+[e = _PWM3DCL -> -> 192 `i `uc ]
+"41
+[; ;main.c: 41: 
 [e :UE 471 ]
+}
+"43
+[; ;main.c: 43: {
+[v _PWM3_LoadPercentDutyValue `(v ~T0 @X0 1 sf1`us ]
+"44
+[; ;main.c: 44:     TRISCbits.TRISC5 = 0x00;
+{
+[e :U _PWM3_LoadPercentDutyValue ]
+"43
+[; ;main.c: 43: {
+[v _dutyValue `us ~T0 @X0 1 r1 ]
+"44
+[; ;main.c: 44:     TRISCbits.TRISC5 = 0x00;
+[f ]
+"45
+[; ;main.c: 45:     RC5PPS = 0x03;
+[e = _dutyValue -> / * -> _dutyValue `ui -> -> 320 `i `ui -> -> 100 `i `ui `us ]
+"46
+[; ;main.c: 46: }
+[e = _PWM3DCH -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
+"47
+[; ;main.c: 47: 
+[e = _PWM3DCL -> << & -> _dutyValue `ui -> -> 3 `i `ui -> 6 `i `uc ]
+"48
+[; ;main.c: 48: static void Initialize(void){
+[e :UE 472 ]
+}
+"50
+[; ;main.c: 50:     PWM3_Initialize();
+[v _TMR2_Initialize `(v ~T0 @X0 1 sf ]
+"51
+[; ;main.c: 51:     TMR2_Initialize();
+{
+[e :U _TMR2_Initialize ]
+[f ]
+"52
+[; ;main.c: 52: }
+[e = _T2CLKCON -> -> 1 `i `uc ]
+"53
+[e = _T2PR -> -> 79 `i `uc ]
+"54
+[e = _T2TMR -> -> 0 `i `uc ]
+"55
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"56
+[e = . . _T2CONbits 0 2 -> -> 1 `i `uc ]
+"57
+[e :UE 473 ]
+}
+"59
+[v _PORT_Initialize `(v ~T0 @X0 1 sf ]
+"60
+{
+[e :U _PORT_Initialize ]
+[f ]
+"61
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"62
+[e = _RC5PPS -> -> 3 `i `uc ]
+"63
+[e :UE 474 ]
+}
+"65
+[v _Initialize `(v ~T0 @X0 1 sf ]
+{
+[e :U _Initialize ]
+[f ]
+"66
+[e ( _PORT_Initialize ..  ]
+"67
+[e ( _PWM3_Initialize ..  ]
+"68
+[e ( _TMR2_Initialize ..  ]
+"69
+[e :UE 475 ]
 }

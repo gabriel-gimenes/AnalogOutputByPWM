@@ -13,17 +13,18 @@
 %PSECTS
 $dist/default/production\AnalogOutputByPWM.X.production.o
 cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 74F 74F B 2
-text2 CODE 0 78D 78D 34 2
-text3 CODE 0 76E 76E 1F 2
-text4 CODE 0 7C1 7C1 3C 2
-text5 CODE 0 747 747 8 2
-text6 CODE 0 741 741 6 2
-maintext CODE 0 75A 75A 14 2
+text1 CODE 0 78D 78D 34 2
+text2 CODE 0 76E 76E 1F 2
+text3 CODE 0 7C1 7C1 3C 2
+text4 CODE 0 74B 74B A 2
+text5 CODE 0 755 755 B 2
+text6 CODE 0 743 743 8 2
+text7 CODE 0 73D 73D 6 2
+maintext CODE 0 760 760 E 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 4 1
 config CONFIG 4 8008 8008 3 2
-$C:\Users\gabri\AppData\Local\Temp\s8ek.o
+$C:\Users\gabri\AppData\Local\Temp\s6ms.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8008 8008 3 2
@@ -47,9 +48,9 @@ BANK3 1A0-1EF 1
 BANK4 220-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-32F 1
-CONST 4-740 2
+CONST 4-73C 2
 CONST 800-FFF 2
-ENTRY 4-740 2
+ENTRY 4-73C 2
 ENTRY 800-FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -107,7 +108,7 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 2004-21EF 1
-CODE 4-740 2
+CODE 4-73C 2
 CODE 800-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -122,9 +123,9 @@ SFR9 480-4EF 1
 BIGRAM 2000-21EF 1
 CONFIG 8007-8007 2
 CONFIG 800B-800B 2
-STRCODE 4-740 2
+STRCODE 4-73C 2
 STRCODE 800-FFF 2
-STRING 4-740 2
+STRING 4-73C 2
 STRING 800-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -140,64 +141,67 @@ STRING 800-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\AnalogOutputByPWM.X.production.o
-7FD cinit CODE >463:C:\Users\gabri\AppData\Local\Temp\s8ek.s
-7FD cinit CODE >466:C:\Users\gabri\AppData\Local\Temp\s8ek.s
-7FD cinit CODE >472:C:\Users\gabri\AppData\Local\Temp\s8ek.s
-7FD cinit CODE >474:C:\Users\gabri\AppData\Local\Temp\s8ek.s
-7FE cinit CODE >475:C:\Users\gabri\AppData\Local\Temp\s8ek.s
-741 text6 CODE >42:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-741 text6 CODE >44:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-743 text6 CODE >45:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-746 text6 CODE >46:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-747 text5 CODE >19:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-747 text5 CODE >21:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-74A text5 CODE >22:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-74C text5 CODE >23:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-74E text5 CODE >24:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-7C1 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7C1 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7C3 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7C9 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7CB text4 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7CC text4 CODE >17:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7D1 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7D5 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7D9 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7DE text4 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7E8 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7EC text4 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7ED text4 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7F2 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7F8 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-7FC text4 CODE >30:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-76E text3 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-76E text3 CODE >43:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-770 text3 CODE >45:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-774 text3 CODE >46:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-778 text3 CODE >47:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-77D text3 CODE >48:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-782 text3 CODE >49:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-788 text3 CODE >52:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-78C text3 CODE >53:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-78D text2 CODE >26:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-78D text2 CODE >28:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-7A9 text2 CODE >29:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-7B4 text2 CODE >30:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-7C0 text2 CODE >31:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-74F text1 CODE >33:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-74F text1 CODE >35:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-752 text1 CODE >36:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-754 text1 CODE >37:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-755 text1 CODE >38:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-757 text1 CODE >39:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-759 text1 CODE >40:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-75A maintext CODE >47:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-75A maintext CODE >48:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-75D maintext CODE >49:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-760 maintext CODE >50:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-768 maintext CODE >51:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-76B maintext CODE >53:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
-76B maintext CODE >54:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+7FD cinit CODE >464:C:\Users\gabri\AppData\Local\Temp\s6ms.s
+7FD cinit CODE >467:C:\Users\gabri\AppData\Local\Temp\s6ms.s
+7FD cinit CODE >473:C:\Users\gabri\AppData\Local\Temp\s6ms.s
+7FD cinit CODE >475:C:\Users\gabri\AppData\Local\Temp\s6ms.s
+7FE cinit CODE >476:C:\Users\gabri\AppData\Local\Temp\s6ms.s
+73D text7 CODE >59:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+73D text7 CODE >61:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+73F text7 CODE >62:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+742 text7 CODE >63:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+743 text6 CODE >36:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+743 text6 CODE >38:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+746 text6 CODE >39:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+748 text6 CODE >40:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+74A text6 CODE >41:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+755 text5 CODE >50:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+755 text5 CODE >52:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+758 text5 CODE >53:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+75A text5 CODE >54:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+75B text5 CODE >55:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+75D text5 CODE >56:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+75F text5 CODE >57:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+74B text4 CODE >65:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+74B text4 CODE >66:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+74E text4 CODE >67:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+751 text4 CODE >68:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+754 text4 CODE >69:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+7C1 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7C1 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7C3 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7C9 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7CB text3 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7CC text3 CODE >17:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7D1 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7D5 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7D9 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7DE text3 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7E8 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7EC text3 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7ED text3 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7F2 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7F8 text3 CODE >29:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+7FC text3 CODE >30:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+76E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+76E text2 CODE >43:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+770 text2 CODE >45:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+774 text2 CODE >46:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+778 text2 CODE >47:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+77D text2 CODE >48:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+782 text2 CODE >49:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+788 text2 CODE >52:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+78C text2 CODE >53:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
+78D text1 CODE >43:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+78D text1 CODE >45:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+7A9 text1 CODE >46:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+7B4 text1 CODE >47:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+7C0 text1 CODE >48:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+760 maintext CODE >24:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+760 maintext CODE >25:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+763 maintext CODE >26:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+76B maintext CODE >28:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
+76B maintext CODE >29:C:\Users\gabri\OneDrive\햞ea de Trabalho\LinkedIn Projects Embbeded\AnalogOutputByPWM\AnalogOutputByPWM\AnalogOutputByPWM.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -222,31 +226,31 @@ _PWM3DCL 314 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _T2PR 28D 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s8ek.o
-_main EB4 0 CODE 0 maintext dist/default/production\AnalogOutputByPWM.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s6ms.o
+_main EC0 0 CODE 0 maintext dist/default/production\AnalogOutputByPWM.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
-start 4 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\s8ek.o
+start 4 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\s6ms.o
 __size_of_main 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_TMR2_Initialize E9E 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s8ek.o
+_TMR2_Initialize EAA 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\gabri\AppData\Local\Temp\s6ms.o
 wtemp0 7E 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 ___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
-__end_of___wmul F1A 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
-__end_of_PWM3_LoadPercentDutyValue F82 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
+__end_of___wmul F1A 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
+__end_of_PWM3_LoadPercentDutyValue F82 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__end_of___lwdiv FFA 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
-___stackhi 21EF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s8ek.o
-___stacklo 2004 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s8ek.o
+__end_of___lwdiv FFA 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
+___stackhi 21EF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s6ms.o
+___stacklo 2004 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s6ms.o
 ___lwdiv@quotient 7B 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\AnalogOutputByPWM.X.production.o
@@ -254,10 +258,11 @@ _TRISCbits 14 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 _RC5PPS 1F25 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\AnalogOutputByPWM.X.production.o
 _T2CLKCON 290 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
+_Initialize E96 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
 __size_of_PWM3_LoadPercentDutyValue 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 PWM3_LoadPercentDutyValue@dutyValue 20 0 BANK0 1 cstackBANK0 dist/default/production\AnalogOutputByPWM.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s8ek.o
-__end_of_PWM3_Initialize E9E 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s6ms.o
+__end_of_PWM3_Initialize E96 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -324,7 +329,7 @@ __Hsfr61 0 0 ABS 0 sfr61 -
 __Hsfr62 0 0 ABS 0 sfr62 -
 __Hsfr63 0 0 ABS 0 sfr63 -
 __Hstack 0 0 STACK 2 stack -
-__end_of_PORT_Initialize E8E 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
+__end_of_PORT_Initialize E86 0 CODE 0 text7 dist/default/production\AnalogOutputByPWM.X.production.o
 ___lwdiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
 __Hbank10 0 0 BANK10 1 bank10 -
 __Hbank11 0 0 BANK11 1 bank11 -
@@ -478,19 +483,20 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-___wmul EDC 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
+___wmul EDC 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 800 0 ABS 0 - -
 __S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
-_PWM3_Initialize E8E 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
-_PORT_Initialize E82 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
+__end_of_Initialize EAA 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
+_PWM3_Initialize E86 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
+_PORT_Initialize E7A 0 CODE 0 text7 dist/default/production\AnalogOutputByPWM.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\gabri\AppData\Local\Temp\s8ek.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\gabri\AppData\Local\Temp\s6ms.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
-_PWM3_LoadPercentDutyValue F1A 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
-___lwdiv F82 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
+_PWM3_LoadPercentDutyValue F1A 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
+___lwdiv F82 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -545,7 +551,7 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext EB4 0 CODE 0 maintext dist/default/production\AnalogOutputByPWM.X.production.o
+__pmaintext EC0 0 CODE 0 maintext dist/default/production\AnalogOutputByPWM.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
@@ -568,15 +574,17 @@ __Lstrings 0 0 ABS 0 strings -
 ___lwdiv@dividend 78 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
 ?___lwdiv 76 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 E9E 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
-__ptext2 F1A 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
-__ptext3 EDC 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
-__ptext4 F82 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
-__ptext5 E8E 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
-__ptext6 E82 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext1 F1A 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext2 EDC 0 CODE 0 text2 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext3 F82 0 CODE 0 text3 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext4 E96 0 CODE 0 text4 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext5 EAA 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext6 E86 0 CODE 0 text6 dist/default/production\AnalogOutputByPWM.X.production.o
+__ptext7 E7A 0 CODE 0 text7 dist/default/production\AnalogOutputByPWM.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_Initialize 0 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\AnalogOutputByPWM.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
@@ -589,7 +597,7 @@ __Lram 0 0 ABS 0 ram -
 __initialization FFA 0 CODE 0 cinit dist/default/production\AnalogOutputByPWM.X.production.o
 _T2CONbits 28E 0 ABS 0 - dist/default/production\AnalogOutputByPWM.X.production.o
 ___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\AnalogOutputByPWM.X.production.o
-__end_of_TMR2_Initialize EB4 0 CODE 0 text1 dist/default/production\AnalogOutputByPWM.X.production.o
+__end_of_TMR2_Initialize EC0 0 CODE 0 text5 dist/default/production\AnalogOutputByPWM.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -616,13 +624,14 @@ __end_of_TMR2_Initialize EB4 0 CODE 0 text1 dist/default/production\AnalogOutput
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 74F E9E B 2
-text2 0 78D F1A 34 2
-text3 0 76E EDC 1F 2
-text4 0 7C1 F82 3C 2
-text5 0 747 E8E 8 2
-text6 0 741 E82 6 2
-maintext 0 75A EB4 14 2
+text1 0 78D F1A 34 2
+text2 0 76E EDC 1F 2
+text3 0 7C1 F82 3C 2
+text4 0 74B E96 A 2
+text5 0 755 EAA B 2
+text6 0 743 E86 8 2
+text7 0 73D E7A 6 2
+maintext 0 760 EC0 E 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 4 1
 reset_vec 0 0 0 4 2
